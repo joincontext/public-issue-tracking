@@ -1,0 +1,47 @@
+name: Bug Report
+description: You've encountered something that you would expect to be working, but isn't
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - irl-dan
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Use screenshots and be as specific as possible about what happened and what you would expect to happen!
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What device were you using?
+      multiple: false
+      options:
+        - Desktop
+        - Mobile
+        - Tablet
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browser were you using?
+      multiple: false
+      options:
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Firefox
+        - Samsung Internet
+        - Opera
+        - Brave
+        - Other
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Priority
+      multiple: false
+      options:
+        - Urgent (it prohibited curating or reading)
+        - High (it significantly degraded the experience of curating or reading)
+        - Medium (it degraded the experience of curating or reading)
+        - Low (all else)
